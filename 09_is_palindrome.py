@@ -21,3 +21,10 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    original = [char.lower() for char in phrase if char not in ' ']
+    reversed = original.copy()
+    reversed.reverse()
+    original = ''.join(original)
+
+    reversed = ''.join(reversed)
+    return original == reversed
