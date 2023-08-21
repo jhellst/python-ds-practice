@@ -50,10 +50,11 @@ def list_manipulation(lst, command, location, value=None):
             return lst.pop()
     else:
         if location == 'beginning':
-            # return [value] + lst
-            return lst.insert(0, value)
+            lst.insert(0, value)
+            return lst
         else:
-            return lst.append(value)
+            lst.append(value)
+            return lst
 
 
 
