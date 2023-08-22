@@ -13,7 +13,8 @@ def weekday_name(day_of_week):
         >>> weekday_name(0)
     """
 
-    if day_of_week < 1 or day_of_week > 7: return None
+    if day_of_week < 1 or day_of_week > 7:
+        return None
 
     days_of_week = {
         1: "Sunday",

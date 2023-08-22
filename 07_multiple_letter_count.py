@@ -9,6 +9,6 @@ def multiple_letter_count(phrase):
     """
     counter = {}
     for letter in phrase:
-        currentLetterCount = counter.get(letter, 0)
-        counter[letter] = currentLetterCount + 1
+        currentLetterCount = counter.get(letter, 0) + 1
+        counter[letter] = currentLetterCount
     return counter
